@@ -1,8 +1,9 @@
 # jango_blog
- Jango-blog dockerized.
+ This is python3's django based blog and I show how to dockerize.
+
+Requirements:docker and linux distro.(Centos7, or Ubuntu 18.04)
 
 ```
-Requirements:docker and linux distro.(Centos7, or Ubuntu 18.04)
 oyj@controller:~/jango_blog$ docker --version
 Docker version 19.03.5, build 633a0ea838
 
