@@ -25,7 +25,9 @@ RUN export LD_RUN_PATH=/opt/sqlite/lib
 RUN echo $PATH
 RUN mv /usr/bin/sqlite3 /usr/bin/sqlite3.old 
 RUN ln -s /opt/sqlite/bin/sqlite3 /usr/bin/sqlite3
-
+#Move old lib(/lib64/sqlite.so to new one
+RUN mv /lib64/libsqlite3.so.0.8.6 /lib64/libsqlite3.so.0.8.6.3.17
+RUN mv /opt/sqlite/lib/libsqlite3.so.0.8.6 /lib64/
 
 WORKDIR /app
 COPY requirements.txt /app/
